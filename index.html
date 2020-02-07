@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="formulaire.css">
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet">
+    <title>Formulaire</title>
+</head>
+<body>
+    <main>
+    <form action="" method="post">
+         <div><h1> Fiche de renseignements</h1></div>
+    <fieldset>
+        <legend class="legend">Civilité</legend> <!-- for et id doivent avoir le même nom , placeholder c'est donner info sur ce qu'on doit sésir-->
+            <p><label for="nom"> Nom et Prenom:</label><input class="bord" type="text" id="nom" placeholder="votre nom"></p>
+            <p><label for="mail">Adresse email:</label><input class="bord" type="email" id="mail" placeholder="abd@gmail.com" autofocus></p>
+            <p> <label for="sex">Sexe:</label><input class="bord" type="radio" name="choise"> Femme <input type="radio" name="choise"> Homme</p>
+            <p><label for="motdepasse">Votre mot de passe:</label><input class="bord" type="password" id="motdepasse"></p>
+            <p><label for="age">Votre Age:</label><input class="bord" type="number" min="15" max="60" id="age" placeholder="votre âge"></p>
+    </fieldset>
+    <fieldset>
+        <legend class="legend"> Formation</legend>
+           <p><label for="diplome">Diplome obtenu </label> <!-- les balises select et option c'est pour créerune liste déroulante-->
+           <select class="bord" name="" id="">
+                <option value="aucun">Aucun </option>
+                <option value="bac"> BAC</option>
+                <option value="bac2">BAC+2</option>
+                <option value="bac3" selected>BAC+3</option> <!-- l'attribut select nous sert à mettre un mot de la liste au début de la liste-->
+           </select></p>
+        <p><label for="centre">Centre d'intéret</label><input class="bord" type="checkbox" name="interet[]"> Musique
+            <input class="bord" type="checkbox" name="interet[]"> Sport <input class="bord" type="checkbox" name="interet[]"> Lecture </p>
+
+    </fieldset>
+    <fieldset>
+        <legend class="legend">Commentaire</legend>
+            <textarea class="bord" placeholder="Votre commentaire ..." cols="50" rows="10" maxlength="100" minlength=""></textarea> <!-- maxlength et minlength pour donner le nombre maximal et minimal de caractère-->
+                <p><label for="cod"></label> J'accepte les conditions<input type="checkbox"  ></p> 
+                <p class="envoyer"><input class="bord" type="submit" value="Envoyer"></p>
+    </fieldset>
+    </form>
+    <!-- "required" c'est pour rendre un champ important-->
+    <!-- "tabindex" c'est pour donner un ordre à notre champ dans nos champs de saisi-->
+    <!-- "autofocus" c'est pour mettre un focus sur un champ de saisi-->    
+    <!--l'attribut" required"n nous permet de dire qu'un champs est obligatoire-->
+    
+    <div class="bas">
+        <h3>Merci de donner vos rensiegnements</h3>
+    </div>
+</main>
+</body>
+</html>

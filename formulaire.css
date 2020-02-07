@@ -1,0 +1,48 @@
+body{ margin: 0;
+     padding: 0;
+     background-color: #b9b4b4 ;
+
+}
+
+main{
+    width: 700px;
+    margin:50px auto;
+    border: 2px purple;
+    box-shadow: 5px 10px 50px gray;
+    padding: 50px;
+    font-family: 'Gothic A1', sans-serif;
+    color: salmon;
+    background-color: white;
+    
+
+}
+h1{
+    text-align: center;
+    color: white;
+
+}
+.bord{
+    border-radius: 3px;
+    border: 2px solid purple;
+}
+.legend{
+    font-size: 1.6em;
+    color: rebeccapurple;
+    border-radius: 20px;
+    border-color: steelblue;
+}
+div{
+    height: 70px;
+    background-color: salmon;
+    padding: 50px;
+}
+::placeholder{
+    color: purple;
+}
+.bas{
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    height:15px;
+    
+}
